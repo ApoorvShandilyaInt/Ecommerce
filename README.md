@@ -29,42 +29,5 @@
 
 ### Note
 
-Some issue is created after checkout
-
-{
-    "name": "Apoorv Shandilya",
-    "mobileNumber": 7475783632,
-    "dateTime": "2024-02-08T13:02:24.0007774",
-    "cartItems": [
-        {
-            "userId": null,--------------------------userId and producdId should not be here
-            "productId": null,--------------------------------------------------------------
-            "quantity": 4,
-            "productPrice": 10,
-            "totalPrice": 40,
-            "productName": "Linc Pen",
-            "price": 0------------this price should not be reflrct here for all cart's product
-        },
-        {
-            "userId": null,--------------------------------------------------------------------
-            "productId": null,-----------------------------------------------------------------
-            "quantity": 5,
-            "productPrice": 20,
-            "totalPrice": 100,
-            "productName": "Sprite",
-            "price": 0-------------------------------------------------------------------------
-        },
-        {
-            "userId": null,--------------------------------------------------------------------
-            "productId": null,-----------------------------------------------------------------
-            "quantity": 50,
-            "productPrice": 30,
-            "totalPrice": 1500,
-            "productName": "Cofee",
-            "price": 0-------------------------------------------------------------------------
-        }
-    ],
-    "totalPrice": 1640,
-    "billId": null-------------------------------------------------------this should not be null
-                                                             unable to fetch  value form database
-}
+Bill number is generate in database but unable to fetch when it call (checkout)
+also after successfull checkout some unwanted entities add with null value(userId, ProductId and one extra price with 0)
